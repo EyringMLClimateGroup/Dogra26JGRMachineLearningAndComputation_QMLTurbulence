@@ -16,13 +16,13 @@ Notebooks and scripts:
 Folders:
 - libs: circuits.py (QNN circuit layouts), qnn_models.py (QNN models based on circuits in circuits.py and training), helpers.py (helper for plotting), dataloading.py (functions to load and preprocess the training data) 
 - abl_heights: data for boundary layer top as part of preprocessing
-- spectra: spectra from Figure 2
-- figures: pdf files of the figures
-- QNN_results: performance and output data of the QNN
-- cl_results: performance and output data of the cl. NN
+- spectra: spectra from Figure 2 (generate data in notebook)
+- figures: pdf files of the figures (generate in notebooks)
+- QNN_results: performance and output data of the QNN (generate data in notebooks)
+- cl_results: performance and output data of the cl. NN (generate data in notebooks)
 
 Other files:
-- Smagorinsky.txt: prediction from applying Smagorinsky closure to the coarse data
+- Smagorinsky.txt: prediction from applying Smagorinsky closure to the coarse data (generate data in notebook)
 - coarsegraining.py: script for coarse graining the high-resolution data
 
 ### Data
