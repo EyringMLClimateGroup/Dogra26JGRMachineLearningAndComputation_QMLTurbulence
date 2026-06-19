@@ -1,0 +1,54 @@
+# APS-style matplotlib configuration
+
+# Font
+font.family: serif
+font.serif: Times New Roman, Times, DejaVu Serif
+font.size: 10
+axes.titlesize: 10
+axes.labelsize: 10
+xtick.labelsize: 8
+ytick.labelsize: 8
+legend.fontsize: 8
+legend.title_fontsize: 9
+
+# Figure size
+figure.figsize: 3.4, 2.5
+
+# Axes
+axes.linewidth: 0.75
+grid.linewidth: 0.5
+grid.color: gray
+axes.grid: False
+axes.labelpad: 4
+
+# Ticks
+xtick.major.size: 4
+xtick.minor.size: 2
+ytick.major.size: 4
+ytick.minor.size: 2
+xtick.major.width: 0.75
+ytick.major.width: 0.75
+xtick.minor.width: 0.5
+ytick.minor.width: 0.5
+xtick.direction: in
+ytick.direction: in
+
+# Lines and markers
+lines.linewidth: 1.0
+lines.markersize: 4
+
+# Legend
+legend.frameon: False
+legend.borderaxespad: 0.5
+
+# Savefig
+savefig.dpi: 300
+savefig.format: pdf
+
+# Text
+text.usetex: True
+mathtext.fontset: custom
+mathtext.rm: Times New Roman
+mathtext.it: Times New Roman:italic
+mathtext.bf: Times New Roman:bold
+mathtext.sf: Times New Roman

@@ -1,0 +1,29 @@
+# Figures
+*.pdf
+*.jpg
+
+# Saved parameters
+*.npy
+*.npz
+*.pkl
+*.txt
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS files
+.DS_Store
