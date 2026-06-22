@@ -1,8 +1,21 @@
-Accompagnying repository for 'Quantum machine learning-based parameterization for atmospheric boundary layer turbulence'
+# Quantum machine learning-based parameterization for atmospheric boundary layer turbulence
 
-### Content
+This repository provides the code for developing, training, and evaluating data-driven hybrid quantum and classical atmospheric turbulence parameterizations based on large eddy simulation (LES) experiments. The models are compared with regard to performance, generalisation and interpretability properties. The hybrid quantum models, which are based on parameterized circuits implemented with Pennylane (Ville Bergholm et al. PennyLane: Automatic differentiation of hybrid quantum-classical computations. 2018. [arXiv:1811.04968](https://arxiv.org/abs/1811.04968)), show similar performance and generalisation properties to classical models of comparable size. The feature importances quantified through SHAPLEY values (Scott M Lundberg and Su-In Lee, A Unified Approach to Interpreting Model Predictions, [Advances in Neural Information Processing Systems 30 (NIPS 2017)](https://proceedings.neurips.cc/paper_files/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html)) are more stable in the quantum models with respect to initialization of the weights and variational parameters, outlining possible advantages in physical stability and generalisability.
 
-Notebooks and scripts:
+%The corresponding paper is available at
+
+%Corresponding DOI:
+
+### Data
+The coarse-grained LES data on which this work is based, and details about the high-resolution data can be found in the data repository 10.5281/zenodo.20326042. The data were generated with the PALM model:
+
+Maronga, B., et al (2020): Overview of the PALM model system 6.0, [Geosci. Model Dev., 13, 1335–1372](https://doi.org/10.5194/gmd-13-1335-2020)
+
+Maronga, B., Gryschka, M., Heinze, R., Hoffmann, F., Kanani-Sühring, F., Keck, M., Ketelsen, K., Letzel, M. O., Sühring, M., and Raasch, S. (2015): The Parallelized Large-Eddy Simulation Model (PALM) version 4.0 for atmospheric and oceanic flows: model formulation, recent developments, and future perspectives, [Geosci. Model Dev., 8, 1539-1637](https://doi.org/10.5194/gmd-8-2515-2015) 
+
+## Content of the repository
+
+### Notebooks and scripts:
 - coarse graining including calculation of the subgridscale flux correction: coarsegraining.py
 - Figures 1 and 2: LES_data_figures.ipynb, Smagorinsky.ipynb
 - data preprocessing: preprocessing.ipynb
@@ -13,7 +26,7 @@ Notebooks and scripts:
 - Figure 5: shapley_values.ipynb
 - Appendix: qnn_hyperparams.ipynb
 
-Folders:
+### Folders:
 - libs: circuits.py (QNN circuit layouts), qnn_models.py (QNN models based on circuits in circuits.py and training), helpers.py (helper for plotting), dataloading.py (functions to load and preprocess the training data) 
 - abl_heights: data for boundary layer top as part of preprocessing
 - spectra: spectra from Figure 2 (generate data in notebook)
@@ -21,15 +34,15 @@ Folders:
 - QNN_results: performance and output data of the QNN (generate data in notebooks)
 - cl_results: performance and output data of the cl. NN (generate data in notebooks)
 
-Other files:
+### Other files:
 - Smagorinsky.txt: prediction from applying Smagorinsky closure to the coarse data (generate data in notebook)
 - coarsegraining.py: script for coarse graining the high-resolution data
 
-### Data
-The coarse-grained Large Eddy Simulation data on which this work is based, and details about the high-resolution data can be found at 10.5281/zenodo.20326042.
 
-### Environment
 
+## Dependencies
+
+The environement to run the codes and create a kernel for the notebooks can be created as:
 ```
 conda env create --name my_env --file env.yml
 conda activate my_env
