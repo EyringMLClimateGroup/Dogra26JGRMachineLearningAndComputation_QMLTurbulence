@@ -6,8 +6,8 @@ The current release on zenodo can be found here:
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1273286464.svg)](https://zenodo.org/badge/latestdoi/1273286464)
 
 ### Data
-The coarse-grained LES data on which this work is based, and details about the high-resolution data can be found in the data repository 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20326042.svg)](https://zenodo.org/badge/latestdoi/20326042)
+The coarse-grained LES data on which this work is based, and details about the high-resolution data can be found in the data repository:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20326041.svg)](https://zenodo.org/badge/latestdoi/20326041)
 
 The data were generated with the PALM model:
 
