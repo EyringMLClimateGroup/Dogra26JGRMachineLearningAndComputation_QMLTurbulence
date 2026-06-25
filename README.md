@@ -3,7 +3,8 @@
 This repository provides the code for developing, training, and evaluating data-driven hybrid quantum and classical atmospheric turbulence parameterizations based on large eddy simulation (LES) experiments. The models are compared with regard to performance, generalisation and interpretability properties. The hybrid quantum models, which are based on parameterized circuits implemented with Pennylane (Ville Bergholm et al. PennyLane: Automatic differentiation of hybrid quantum-classical computations. 2018. [arXiv:1811.04968](https://arxiv.org/abs/1811.04968)), show similar performance and generalisation properties to classical models of comparable size. The feature importances quantified through SHAPLEY values (Scott M Lundberg and Su-In Lee, A Unified Approach to Interpreting Model Predictions, [Advances in Neural Information Processing Systems 30 (NIPS 2017)](https://proceedings.neurips.cc/paper_files/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html)) are more stable in the quantum models with respect to initialization of the weights and variational parameters, outlining possible advantages in physical stability and generalisability.
 
 The current release on zenodo can be found here:
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1273286464.svg)](https://zenodo.org/badge/latestdoi/1273286464)
+[![DOI](https://zenodo.org/badge/DOI/zenodo.1273286464.svg)](https://zenodo.org/badge/latestdoi/1273286464)
+
 
 ### Data
 The coarse-grained LES data on which this work is based, and details about the high-resolution data can be found in the data repository:
